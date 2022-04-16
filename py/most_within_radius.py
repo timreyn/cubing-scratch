@@ -1,4 +1,5 @@
 # Compute the location with the most competitions in a year within 250 km.
+# https://www.facebook.com/groups/439995439706174/posts/1620451491660557/
 #
 # We start with a 4x4 grid of regions of the world, divided by lat + lon.
 #
