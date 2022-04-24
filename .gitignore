@@ -1,2 +1,3 @@
 __pycache__/
 *.pyc
+.wca_rankings.tmp_export/
