@@ -317,3 +317,60 @@ insert into regions (country_id, region_id, region_name) values
 ("India","INC","Central India"),
 ("India","INW","Western India"),
 ("India","INN","North India");
+
+CREATE TEMPORARY TABLE eligible_for_championships
+SELECT competition_id, championship_type, "national" AS level, eventId, personId, pos
+FROM Results
+JOIN championships ON Results.competitionId = championships.competition_id
+JOIN Countries ON Results.personCountryId = Countries.id
+WHERE best > 0
+AND roundTypeId IN ("c", "f")
+AND Countries.iso2 = championship_type
+UNION ALL
+SELECT competition_id, championship_type, "continental" AS level, eventId, personId, pos
+FROM Results
+JOIN championships ON Results.competitionId = championships.competition_id
+JOIN Countries ON Results.personCountryId = Countries.id
+WHERE best > 0
+AND roundTypeId IN ("c", "f")
+AND Countries.continentId = championship_type
+UNION ALL
+SELECT competition_id, championship_type, "world" AS level, eventId, personId, pos
+FROM Results
+JOIN championships ON Results.competitionId = championships.competition_id
+WHERE best > 0
+AND roundTypeId IN ("c", "f")
+AND championship_type = "world"
+UNION ALL
+SELECT competition_id, championships.championship_type, "regional" AS level, eventId, personId, pos
+FROM Results
+JOIN championships ON Results.competitionId = championships.competition_id
+JOIN Countries ON Results.personCountryId = Countries.id
+JOIN eligible_country_iso2s_for_championship
+ON championships.championship_type = eligible_country_iso2s_for_championship.championship_type
+WHERE best > 0
+AND roundTypeId IN ("c", "f")
+AND Countries.iso2 = eligible_country_iso2;
+CREATE INDEX idx ON eligible_for_championships (personId, competitionId, eventId, championship_type, level);
+
+CREATE TEMPORARY TABLE champion_positions
+SELECT competition_id, championship_type, level, eventId, MIN(pos) AS winning_pos
+FROM eligible_for_championships
+GROUP BY 1,2,3,4;
+CREATE INDEX idx ON champion_positions (competition_id, eventId, winning_pos);
+
+DROP TABLE IF EXISTS champions;
+CREATE TABLE champions
+SELECT Results.personId, Results.competitionId, Results.eventId, champion_positions.championship_type, champion_positions.level
+FROM Results
+JOIN champion_positions
+ON Results.competitionId = champion_positions.competition_id
+AND Results.eventId = champion_positions.eventId
+AND Results.pos = winning_pos
+JOIN eligible_for_championships
+ON Results.personId = eligible_for_championships.personId
+AND Results.competitionId = eligible_for_championships.competition_id
+AND Results.eventId = eligible_for_championships.eventId
+AND champion_positions.championship_type = eligible_for_championships.championship_type
+AND champion_positions.level = eligible_for_championships.level
+WHERE Results.roundTypeId IN ("c", "f") AND Results.best > 0;
