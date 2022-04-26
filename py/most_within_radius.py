@@ -16,9 +16,9 @@
 
 from absl import app
 from absl import flags
-import math
 
 from db import db
+import common
 
 FLAGS = flags.FLAGS
 
@@ -30,19 +30,6 @@ flags.DEFINE_integer('min_lat', -90, 'min latitude')
 flags.DEFINE_integer('max_lat', 90, 'max latitude')
 flags.DEFINE_integer('min_lon', -180, 'min longitude')
 flags.DEFINE_integer('max_lon', 180, 'max longitude')
-
-def deg2rad(deg):
-  return deg * math.pi / 180
-
-def distance(lat1, lon1, lat2, lon2):
-  R = 6371
-  dLat = deg2rad(lat2-lat1)
-  dLon = deg2rad(lon2-lon1)
-  a = (math.sin(dLat/2) * math.sin(dLat/2) +
-       math.cos(deg2rad(lat1)) * math.cos(deg2rad(lat2)) *
-       math.sin(dLon/2) * math.sin(dLon/2))
-  c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-  return R * c
 
 NOT_NEAR = 0
 NEAR_REGION = 1
@@ -76,13 +63,13 @@ class Region(object):
     return out
 
   def diameter(self):
-    return max(distance(self.min_lat, self.min_lon, self.max_lat, self.max_lon),
-               distance(self.min_lat, self.max_lon, self.max_lat, self.min_lon))
+    return max(common.distance(self.min_lat, self.min_lon, self.max_lat, self.max_lon),
+               common.distance(self.min_lat, self.max_lon, self.max_lat, self.min_lon))
 
   def near_center(self, lat, lon, max_distance):
     center_lat = (self.min_lat + self.max_lat) / 2
     center_lon = (self.min_lon + self.max_lon) / 2
-    d = distance(lat, lon, center_lat, center_lon)
+    d = common.distance(lat, lon, center_lat, center_lon)
     if d < max_distance:
       return NEAR_CENTER
     elif d < max_distance + self.diameter() / 2:
