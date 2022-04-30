@@ -78,9 +78,11 @@ def main(argv):
 
   events = [row for row in db.run('SELECT id, name FROM Events ORDER BY rank ASC')]
 
-  print('Last generated ' + datetime.datetime.now(datetime.timezone.utc).isoformat())
+  print('Last generated ' + datetime.datetime.now(datetime.timezone.utc).strftime('%B %d, %Y %H:%M:%S %Z'))
   print()
   print(db.credit(markdown=True))
+  print()
+  print('List of competitors loaded from [https://registration.wca2022.eu/competitors](wca2022.eu).')
   print()
 
   for event in events:
