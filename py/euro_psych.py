@@ -100,9 +100,9 @@ def main(argv):
           print('=============================================')
           print()
       if entry[1] != NA:
-        print('%d. %s (%s) (%s)' % (i+1, person_names[entry[0]], entry[0], formatters.FormatTime(entry[1], eventId, 'bf' not in eventId)))
+        print('%d. %s ([%s](https://worldcubeassociation.org/persons/%s)) (%s)' % (i+1, person_names[entry[0]], entry[0], entry[0], formatters.FormatTime(entry[1], eventId, 'bf' not in eventId)))
       else:
-        print('%d. %s (%s)' % (i+1, person_names[entry[0]], entry[0]))
+        print('%d. %s ([%s](https://worldcubeassociation.org/persons/%s))' % (i+1, person_names[entry[0]], entry[0], entry[0]))
     print('')
 
 
