@@ -351,7 +351,7 @@ ON championships.championship_type = eligible_country_iso2s_for_championship.cha
 WHERE best > 0
 AND roundTypeId IN ("c", "f")
 AND Countries.iso2 = eligible_country_iso2;
-CREATE INDEX idx ON eligible_for_championships (personId, competitionId, eventId, championship_type, level);
+CREATE INDEX idx ON eligible_for_championships (personId, competition_id, eventId, championship_type, level);
 
 CREATE TEMPORARY TABLE champion_positions
 SELECT competition_id, championship_type, level, eventId, MIN(pos) AS winning_pos
