@@ -1,8 +1,8 @@
-Last generated April 30, 2022 12:56:18 UTC
+Last generated April 30, 2022 13:00:46 UTC
 
 This information is based on competition results owned and maintained by the World Cube Association, published at <https://worldcubeassociation.org/results> as of April 30, 2022 (version WCA\_export077\_20220430T040001Z).
 
-List of competitors loaded from [https://registration.wca2022.eu/competitors](wca2022.eu).
+List of competitors loaded from [wca2022.eu](https://registration.wca2022.eu/competitors).
 
 # 3x3x3 Cube
 1. Max Park ([2012PARK03](https://worldcubeassociation.org/persons/2012PARK03)) (5.08)

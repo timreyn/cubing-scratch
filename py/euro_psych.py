@@ -82,7 +82,7 @@ def main(argv):
   print()
   print(db.credit(markdown=True))
   print()
-  print('List of competitors loaded from [https://registration.wca2022.eu/competitors](wca2022.eu).')
+  print('List of competitors loaded from [wca2022.eu](https://registration.wca2022.eu/competitors).')
   print()
 
   for event in events:
