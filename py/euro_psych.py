@@ -96,7 +96,9 @@ def main(argv):
         elif entry[1] == NA:
           passed_qualification = True
         if passed_qualification:
+          print()
           print('=============================================')
+          print()
       if entry[1] != NA:
         print('%d. %s (%s) (%s)' % (i+1, person_names[entry[0]], entry[0], formatters.FormatTime(entry[1], eventId, 'bf' not in eventId)))
       else:

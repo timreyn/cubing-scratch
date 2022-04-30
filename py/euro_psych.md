@@ -1,4 +1,4 @@
-Last generated 2022-04-30T02:06:24.858969+00:00
+Last generated 2022-04-30T02:10:29.796568+00:00
 
 # 3x3x3 Cube
 1. Max Park (2012PARK03) (5.08)
@@ -592,7 +592,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 267. stecy boucher (2021BOUC01) (25.82)
 268. Maria Beausang (2016BEAU03) (30.23)
 269. Lukas Byrski (2021BYRS01) (32.73)
+
 =============================================
+
 270. Paul Fournet (2019FOUR01)
 271. Jakov Srečković (2021SREC01)
 
@@ -809,7 +811,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 210. Lorenz Hurlet (2019HURL03) (58.77)
 211. Simon Kelly (2017KELL08) (58.93)
 212. Rasmus Händén (2016HAND04) (59.74)
+
 =============================================
+
 213. Harry Owen (2017OWEN01) (1:00.59)
 214. Lydia Van Deventer (2013DEVE02) (1:01.08)
 215. Skye Perryn (2021PERR02) (1:02.13)
@@ -1016,7 +1020,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 173. Sven Vaillant-Jørgensen (2019VAIL03) (1:49.55)
 174. Theo Naedenoen (2019NAED01) (1:49.79)
 175. AJ Nicholls (2015NICH04) (1:49.83)
+
 =============================================
+
 176. Lorenz Hurlet (2019HURL03) (1:51.89)
 177. Twan Dullemond (2018DULL01) (1:52.56)
 178. Håvard Færden (2019FARD01) (1:53.05)
@@ -1157,7 +1163,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 112. Katharina Schlomberg (2020SCHL01) (3:25.44)
 113. Óskar Pétursson (2017PETU02) (3:26.38)
 114. Carl Emil Exner (2017EXNE01) (3:29.92)
+
 =============================================
+
 115. Viljo Elo (2016ELOV01) (3:40.71)
 116. Romain D'HONDT (2018DHON01) (3:41.33)
 117. Oliver Pällo (2020PALL01) (3:48.52)
@@ -1260,7 +1268,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 88. Daniël Kassab (2012KASS01) (4:34.29)
 89. Simone Ohler (2014OHLE01) (4:37.06)
 90. Daniel Anker Hermansen (2017HERM01) (4:42.87)
+
 =============================================
+
 91. Nox Clémenceau (2015CLEM03) (4:47.83)
 92. Kacper Paweł Dworak (2020DWOR01) (4:49.15)
 93. Vincent Chan (2017CHAN44) (4:59.49)
@@ -1384,7 +1394,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 102. Amelia Zakrzewska (2012ZAKR01) (2:38.39)
 103. Thomas Jansson (2017JANS02) (2:41.85)
 104. Mikela Elleby Jørgensen (2015JORG01) (2:59.97)
+
 =============================================
+
 105. Harry Taylor (2014TAYL06) (3:03.21)
 106. Martin Zhang (2021ZHAN52) (3:03.93)
 107. Marcus Kamen (2015KAME02) (3:16.67)
@@ -1463,7 +1475,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 58. Adam Swaine (2017SWAI01) (0.35)
 59. Igor Wawrzynski (2019WAWR01) (0.35)
 60. Ianis Costin Chele (2021CHEL01) (0.37)
+
 =============================================
+
 61. Mats Walker (2021WALK02) (0.40)
 62. Fred Lang (2016LANG12) (0.41)
 63. Niklas Eliasson (2021ELIA01) (0.41)
@@ -1652,7 +1666,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 180. Mikas Motiejuitis (2017MOTI02) (29.87)
 181. Marco Syfrig (2015SYFR01) (29.88)
 182. Kobe Lutjeharms (2022LUTJ01) (29.92)
+
 =============================================
+
 183. Skye Perryn (2021PERR02) (30.25)
 184. Kasper Borg (2020BORG01) (30.35)
 185. Katharina Schlomberg (2020SCHL01) (30.56)
@@ -1765,7 +1781,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 84. Håvard Færden (2019FARD01) (11.75)
 85. Wilfrid Py (2016PYWI01) (11.79)
 86. Mary Hennessy (2015HENN02) (11.89)
+
 =============================================
+
 87. Zayn Khanani (2018KHAN28) (12.10)
 88. Magnus Kanstrup (2015KANS01) (12.59)
 89. Milhouse Gibbons-Paul (2017GIBB01) (12.78)
@@ -1922,7 +1940,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 130. Alessandro Zangolini (2021ZANG01) (1:53.99)
 131. Steffen Nielsen (2013NIEL02) (1:55.47)
 132. Birk Jønch-Clausen (2021JOEN01) (1:57.82)
+
 =============================================
+
 133. Igor Wawrzynski (2019WAWR01) (2:00.17)
 134. Elias Lampert (2021LAMP01) (2:02.41)
 135. Daniel Evans (2016EVAN06) (2:08.70)
@@ -2164,7 +2184,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 222. Maaike Versluis (2019VERS04) (21.93)
 223. Thomas Ditton (2018DITT03) (26.26)
 224. Ugo Numa Tomat (2022TOMA02) (37.17)
+
 =============================================
+
 225. Florian Hainbucher (2022HAIN01)
 226. Jakov Srečković (2021SREC01)
 227. Lukas Byrski (2021BYRS01)
@@ -2361,7 +2383,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 184. Pep Edén (2021EDEN01) (29.38)
 185. Thomas Ditton (2018DITT03) (36.55)
 186. Ugo Numa Tomat (2022TOMA02) (39.28)
+
 =============================================
+
 187. Kobe Lutjeharms (2022LUTJ01)
 188. Lukas Byrski (2021BYRS01)
 189. Håkon Fredriksen (2018FRED01)
@@ -2464,7 +2488,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 92. Alessandro Zangolini (2021ZANG01) (24.32)
 93. Daniël Kassab (2012KASS01) (24.49)
 94. Iván Brigidano Pérez (2016PERE44) (24.73)
+
 =============================================
+
 95. Ricardo Olea Catalan (2017CATA04) (26.37)
 96. Étienne AUBRY (2018AUBR01) (27.11)
 97. Laura Tarrés Gimeno (2015GIME02) (27.14)
@@ -2511,7 +2537,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 23. Jesús Lindo García (2013GARC08) (8:15.39)
 24. Kacper Paweł Dworak (2020DWOR01) (9:15.93)
 25. Hassan Khanani (2018KHAN26) (9:31.51)
+
 =============================================
+
 26. Simone Ohler (2014OHLE01) (10:23)
 27. Simon Kelly (2017KELL08) (12:58)
 28. Muhammad Saleh Imtiaz (2018IMTI01) (14:06)
@@ -2546,7 +2574,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 21. Simone Ohler (2014OHLE01) (19:29)
 22. Hassan Khanani (2018KHAN26) (27:31)
 23. Jesús Lindo García (2013GARC08) (28:40)
+
 =============================================
+
 24. Jacob Oliver Bruun (2018BRUU01)
 25. Victor Glyrskov (2014GLYR01)
 26. Ben Stokes (2018STOK01)
@@ -2578,7 +2608,9 @@ Last generated 2022-04-30T02:06:24.858969+00:00
 23. Galaad Langlois (2021LANG01) (10/15 57:30)
 24. Katharina Schlomberg (2020SCHL01) (7/10 51:42)
 25. Hassan Khanani (2018KHAN26) (7/10 59:47)
+
 =============================================
+
 26. Daniel Karnaukh (2014KARN02) (3/3 19:13)
 27. Carl Emil Exner (2017EXNE01) (3/4 35:07)
 28. Igor Wawrzynski (2019WAWR01) (2/3 23:21)
