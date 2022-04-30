@@ -16,6 +16,7 @@ LATEST_EXPORT=$(curl https://www.worldcubeassociation.org/results/misc/export.ht
 | sed -s 's/.*\(WCA_export[0-9A-Za-z_]*\).sql.zip.*/\1/')
 
 echo 'Fetching export '$LATEST_EXPORT
+echo $LATEST_EXPORT > latest_export
 
 # Fetch the database and unzip it.
 URL_TO_FETCH="https://www.worldcubeassociation.org/results/misc/$LATEST_EXPORT.sql.zip"

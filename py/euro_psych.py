@@ -79,6 +79,7 @@ def main(argv):
   events = [row for row in db.run('SELECT id, name FROM Events ORDER BY rank ASC')]
 
   print('Last generated ' + datetime.datetime.now(datetime.timezone.utc).isoformat())
+  print(db.credit(markdown=True))
   print()
 
   for event in events:
