@@ -1,6 +1,7 @@
 from absl import app
 from absl import flags
 import collections
+import datetime
 import json
 import requests
 
@@ -77,12 +78,15 @@ def main(argv):
 
   events = [row for row in db.run('SELECT id, name FROM Events ORDER BY rank ASC')]
 
+  print('Last generated ' + datetime.datetime.now(datetime.timezone.utc).isoformat())
+  print()
+
   for event in events:
     eventId = event[0]
     passed_qualification = False
     if eventId not in event_id_to_name:
       continue
-    print(event[1])
+    print('# ' + event[1])
     for i, entry in enumerate(sorted(psych[eventId].items(), key=lambda e: e[1])):
       if not passed_qualification:
         if eventId in qualifications and entry[1] > qualifications[eventId]:
