@@ -30,6 +30,18 @@ create table UniquePersons
 select id, name, countryId, gender from Persons where subId = 1;
 alter table UniquePersons add primary key(id);
 
+drop table if exists first_competitions;
+create table first_competitions
+select distinct a.personId as personId, competitionId from
+(select
+  personId,
+  min(startDate) as firstStartDate
+  from Results join Competitions
+  on Results.competitionId=Competitions.id
+  group by 1) as a
+join Results on a.personId=Results.personId
+join Competitions on Competitions.startDate=firstStartDate and Results.competitionId=Competitions.id;
+
 drop table if exists state_counts;
 create table state_counts
 select
