@@ -386,3 +386,17 @@ AND Results.eventId = eligible_for_championships.eventId
 AND champion_positions.championship_type = eligible_for_championships.championship_type
 AND champion_positions.level = eligible_for_championships.level
 WHERE Results.roundTypeId IN ("c", "f") AND Results.best > 0;
+
+CREATE TEMPORARY TABLE FirstCompetitionDates
+SELECT personId, MIN(startDate) AS firstDate
+FROM Results JOIN Competitions ON Results.competitionId = Competitions.id
+GROUP BY personId;
+
+DROP TABLE IF EXISTS FirstCompetitions;
+CREATE TABLE FirstCompetitions
+SELECT Results.personId AS personId, MIN(competitionId) AS competitionId
+FROM Results
+JOIN Competitions ON Results.competitionId = Competitions.id
+JOIN FirstCompetitionDates ON Results.personId = FirstCompetitionDates.personId
+WHERE startDate = firstDate
+GROUP BY Results.personId;
