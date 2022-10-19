@@ -9,6 +9,8 @@ FLAGS = flags.FLAGS
 
 flags.DEFINE_string('event_id', '333', 'Event to use.', short_name='e')
 flags.DEFINE_integer('num', 20, 'Number to output.')
+flags.DEFINE_bool('single', False, 'Require PR single.')
+flags.DEFINE_bool('average', False, 'Require PR average.')
 
 NO_TIME = 999999999999999
 
@@ -34,7 +36,12 @@ def main(argv):
       streak = 0
       pr_single = NO_TIME
       pr_average = NO_TIME
-    if best <= pr_single and best > 0 and average <= pr_average and average > 0:
+    continues_streak = True
+    if FLAGS.single and (best <= 0 or best > pr_single):
+      continues_streak = False
+    if FLAGS.average and (average <= 0 or average > pr_average):
+      continues_streak = False
+    if continues_streak:
       streak += 1
       pr_single = best
       pr_average = average
